@@ -1,0 +1,16 @@
+.SearchBar {
+    padding: 24px 16px 16px 16px;
+    display: flex;
+}
+
+.SearchBar input {
+    flex: 1;
+    border: none;
+    border-radius: 24px;
+    padding: 16px;
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.1));
+    box-sizing: border-box;
+    background-image: url('../img/search.svg');
+    background-repeat: no-repeat;
+    background-position: 310px
+}
