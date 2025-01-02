@@ -1,0 +1,15 @@
+.profile-header {
+    display: flex;
+}
+
+.nums-list {
+    display: flex;
+    gap: 16px;
+}
+
+.nums-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}

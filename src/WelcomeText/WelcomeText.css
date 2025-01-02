@@ -1,0 +1,19 @@
+.welcomeTitle {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--secundary-color);
+}
+
+.welcomeTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.welcomeDescription {
+    color: white;
+    font-weight: 300;
+    line-height: 20px;
+}

@@ -1,0 +1,71 @@
+.buttons_header {
+   display: flex;
+   justify-content: center;
+   gap: 16px;
+   padding: 0 16px;
+}
+
+.button_news {
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+}
+
+.button_news i {
+    background-color: var(--secundary-color);
+    color: white;
+}
+
+.button_gift {
+    background-color: #e1e1e1;
+    color: var(--primary-color);
+}
+
+.button_gift i {
+    background-color: white;
+}
+
+.button {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 24px;
+    padding: 4px;
+    gap: 14px;
+    font-weight: 700;
+    font-size: 14px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.button i {
+    padding: 8px;
+    border-radius: 100%;
+}
+
+.button_add {
+    background-color: var(--primary-color);
+    color: white;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-buttons-main {
+    justify-content: center;
+    background-color: var(--secundary-color);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+    padding: 12px;
+    width: calc(100% - 32px); /* Reduz 16px de cada lado */
+}
+
+.register-buttons-sec {
+    border: 1px solid var(--secundary-color);
+    font-size: 16px;
+    color: var(--secundary-color);
+    font-weight: 400;
+    padding: 12px;
+    justify-content: center;
+}

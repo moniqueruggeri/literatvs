@@ -1,9 +1,11 @@
 import React from "react";
-import profilePicture from "../img/profile_picture.png";
 import "./Header.css";
 import SearchBar from "../SearchBar/SearchBar";
+import ProfilePic from "../ProfilePic/ProfilePic";
 
-const Header = () => {
+
+const Header = ({ toggleSideBar }) => {
+
   return (
     <>
       <div className="header">
@@ -11,7 +13,7 @@ const Header = () => {
           <span>Olá,</span>
           <br /> Martina!
         </h1>
-        <img src={profilePicture} alt="foto de perfil Martina" />
+        <ProfilePic onClick={toggleSideBar}/>
       </div>
       <SearchBar />
     </>

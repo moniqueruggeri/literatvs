@@ -1,0 +1,26 @@
+.navBar {
+    background-color: var(--primary-color);
+    padding: 8px 0;
+    border-radius: 50px;
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    left: 16px;
+    right: 16px;
+    width: 100%;
+    max-width: calc(375px - 32px);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.navBar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.ativo {
+    color: var(--secundary-color);
+    filter: drop-shadow(0 4px 4px rgba(126, 76, 206, 0.9));
+}

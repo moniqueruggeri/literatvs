@@ -12,5 +12,6 @@
     box-sizing: border-box;
     background-image: url('../img/search.svg');
     background-repeat: no-repeat;
-    background-position: 310px
+    background-position: 275px;
+    background-color: #ffff;
 }

@@ -1,0 +1,48 @@
+.historicProfile {
+    margin: 0 16px;
+    margin-top: -12px;
+    display: flex;
+    padding: 24px 10px 8px 10px;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 0 0 16px 16px;
+    z-index: -1;
+}
+
+.historicProfile img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.historicProfile .titles {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.historicProfile .titles h2{
+    font-size: 12px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.historicProfile .titles p {
+    font-size: 10px;
+    color: #979DAC;
+}
+
+.historicProfile .likes, .historicProfile .comments {
+    display: flex;
+    align-items: center;
+}
+
+.historicProfile .likes i, .historicProfile .comments i {
+    color: var(--secundary-color);
+}
+
+.historicProfile .likes p, .historicProfile .comments p {
+    font-size: 12px;
+    color: #979DAC;
+}
