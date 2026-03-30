@@ -1,0 +1,108 @@
+@import url("../layouts/MainLayout.css");
+
+.login-section, .register-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    gap: 40px;
+    background-color: var(--purple);
+}
+
+.login-container, .register-container {
+    padding: 50px;
+    border-radius: 20px;
+    border-color: var(--green-dark);
+    background-color: var(--purple-dark);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+}
+
+.div-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    border: none;
+    background-color: #bd97fd;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.forgot-password {
+    color: var(--green);
+    font-weight: 500;
+    text-align: right;
+    margin: 0;
+}
+
+.input::placeholder {
+    color: var(--purple-dark);
+    padding: 10px;
+}
+
+.button {
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    background-color: var(--green);
+    color: var(--purple);
+    width: 100%;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 200px;
+    background-color: var(--green);
+    opacity: 50%;
+}
+
+.welcomming {
+    width: 350px;
+}
+
+.title-login, .title-register {
+    color: var(--green);
+}
+
+.description-login {
+    color: #ffffff;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.create-account {
+    color: var(--green);
+    margin: 0;
+    font-weight: 500;
+    text-align: right;
+}
+
+@media screen and (max-width: 1200px) {
+    .login-container, .register-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+}
