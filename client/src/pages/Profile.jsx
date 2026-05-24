@@ -1,8 +1,15 @@
+import { useNavigate } from "react-router-dom"
 import { useAuth } from "../context/AuthContext"
 
 const Profile = () => {
   const { user, logout, loading } = useAuth()
+  const navigate = useNavigate()
 
+  const handleLogout = () => {
+    logout()
+    navigate("/")
+  }
+ 
   if (loading) {
     return <p>A carregar...</p>
   }
@@ -20,7 +27,7 @@ const Profile = () => {
       <p><strong>Telefone:</strong> {user.phone || "—"}</p>
       <p><strong>Role:</strong> {user.role_id}</p>
 
-      <button onClick={logout}>Logout</button>
+      <button onClick={handleLogout}>Logout</button>
     </div>
   )
 }

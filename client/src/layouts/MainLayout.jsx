@@ -1,6 +1,7 @@
 import { NavLink, Outlet, useNavigate } from "react-router-dom"
 import { useAuth } from "../context/AuthContext"
 import "./MainLayout.css"
+import logo from "../img/logo-literatvs.png"
 
 const MainLayout = () => {
   const { user, logout } = useAuth()
@@ -8,20 +9,19 @@ const MainLayout = () => {
 
   const handleLogout = () => {
     logout()
-    navigate("/login")
+    navigate("/")
   }
 
   return (
     <div className="app-shell">
       <aside className="sidebar">
         <div className="brand-block">
-          <div className="brand-logo">V</div>
-          <h1>Literatvs</h1>
+          <img src={logo} alt="Literatvs"/>
           <p>Your reading universe</p>
         </div>
 
         <nav className="sidebar-nav">
-          <NavLink to="/" end>Início</NavLink>
+          <NavLink to="/home" end>Início</NavLink>
           <NavLink to="/my-library">Biblioteca</NavLink>
           <NavLink to="/my-reviews">Minhas Reviews</NavLink>
           <NavLink to="/lists">Listas</NavLink>
@@ -46,7 +46,7 @@ const MainLayout = () => {
             </>
           ) : (
             <div className="auth-links">
-              <NavLink to="/login">Login</NavLink>
+              <NavLink to="/">Login</NavLink>
               <NavLink to="/register">Registo</NavLink>
             </div>
           )}

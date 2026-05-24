@@ -36,7 +36,7 @@ const Login = () => {
       setSuccess("Login feito com sucesso!");
 
       setTimeout(() => {
-        navigate("/profile");
+        navigate("/home");
       }, 500);
     } catch (err) {
       console.error("LOGIN FRONT ERROR:", err);
